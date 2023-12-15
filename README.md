@@ -6,7 +6,7 @@ and modified depending on the environment on a given day. A winter sourdough dou
 Because of this, I wanted to create a simple application that I can use as my first step in every loaf I make. There are a few basic inputs and a recipe is output at the end.
 You are able to enter your flour quantity and what percentages you want to use and a recipe will be generated with those numbers.
 
-A future feature I hope to add is the ability for my app to query local weather conditions and make suggestions based on those conditions!
+- A future feature I hope to add is the ability for my app to query local weather conditions and make suggestions based on those conditions!
 
 
 ## Wanna give it a try?
