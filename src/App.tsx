@@ -1,5 +1,6 @@
 import "./App.scss";
 import {Route, Routes} from "react-router-dom";
+import SourdoughCalcPage from "./pages/SourdoughCalcPage/SourdoughCalcPage.tsx";
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
                     <Route
                         path={"/"}
                         element={
-                            <div></div>
+                        <SourdoughCalcPage/>
                         }
                     />
                 </Routes>

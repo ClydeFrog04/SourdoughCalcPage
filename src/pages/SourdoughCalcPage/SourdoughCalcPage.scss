@@ -1,0 +1,7 @@
+@use "../../shared/Styles" as *;
+
+.sourdoughCalcPage{
+    @include flexCenterColumn();
+
+    border: 1px solid rebeccapurple;
+}
