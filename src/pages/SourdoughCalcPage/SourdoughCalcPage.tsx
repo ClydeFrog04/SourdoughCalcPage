@@ -101,6 +101,12 @@ const SourdoughCalcPage = (props: SourdoughCalcPageProps) => {
                 based on the amount of flour you want to use. This calculator does NOT return volumetric measurements
                 since they are not precise enough
                 for sourdough.
+                <br/>
+                To use:<br/>
+                -You can change any of the percentage values to calculate what you want your recipe to be(a basic sourdough recipe is prefilled)<br/>
+                -Or if you prefer, you can also change the starting flour weight, e.g. you want 500g flour, the rest will adjust as needed.<br/>
+                -Or if you
+                want a recipe based on how much starter you have to start with, you can change the starter grams as well!
             </p>
             <div className="calculator">
                 <div className="infoRow">
