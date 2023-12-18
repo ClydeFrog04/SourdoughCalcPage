@@ -52,15 +52,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
-  border: 1px solid rebeccapurple;
+  width: 50%;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+}
+.sourdoughCalcPage .calculator {
+  margin-top: 1rem;
 }
 .sourdoughCalcPage .calculator .infoRow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
 }
-.sourdoughCalcPage .calculator .inputs > * {
+.sourdoughCalcPage .calculator .inputs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
@@ -68,6 +72,19 @@
 @media (width < 480px) {
   .sourdoughCalcPage {
     padding: 1rem;
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .sourdoughCalcPage .calculator {
+    padding-bottom: 20rem;
+    align-self: flex-start;
+  }
+  .sourdoughCalcPage .inputs input {
+    width: 50%;
+  }
+  .sourdoughCalcPage .inputs #percent, .sourdoughCalcPage .inputs #grams {
+    width: 50%;
+    text-align: center;
   }
 }
 

@@ -109,32 +109,34 @@ const SourdoughCalcPage = (props: SourdoughCalcPageProps) => {
                 want a recipe based on how much starter you have to start with, you can change the starter grams as well!
             </p>
             <div className="calculator">
-                <div className="infoRow">
-                    <span>ingredient</span>
-                    <span>%</span>
-                    <span>grams</span>
-                </div>
+                {/*<div className="infoRow">*/}
+
+                {/*</div>*/}
                 <div className="inputs">
-                    <div className="flour">
+                    <span>Ingredient</span>
+                    <span id="percent">%</span>
+                    <span id="grams">grams</span>
+
+                    {/*<div className="flour">*/}
                         <label htmlFor="flour">Flour:</label>
                         <input type="text" id="flourPercent" value={percentages.flourPercent} onChange={handlePercentInputChange}/>
                         <input type="text" id="flour" value={measurements.flour} onChange={handleNumInputChange}/>
-                    </div>
-                    <div className="water">
+                    {/*</div>*/}
+                    {/*<div className="water">*/}
                         <label htmlFor="water">Water:</label>
                         <input type="text" id="waterPercent" value={percentages.waterPercent} onChange={handlePercentInputChange}/>
                         <input type="text" id="water" value={measurements.water} onChange={handleNumInputChange}/>
-                    </div>
-                    <div className="starter">
+                    {/*</div>*/}
+                    {/*<div className="starter">*/}
                         <label htmlFor="starter">Starter:</label>
                         <input type="text" id="starterPercent" value={percentages.starterPercent} onChange={handlePercentInputChange}/>
                         <input type="text" id="starter" value={measurements.starter} onChange={handleNumInputChange}/>
-                    </div>
-                    <div className="salt">
+                    {/*</div>*/}
+                    {/*<div className="salt">*/}
                         <label htmlFor="salt">Salt:</label>
                         <input type="text" id="saltPercent" value={percentages.saltPercent} onChange={handlePercentInputChange}/>
                         <input type="text" id="salt" value={measurements.salt} onChange={handleNumInputChange}/>
-                    </div>
+                    {/*</div>*/}
                 </div>
             </div>
         </div>
