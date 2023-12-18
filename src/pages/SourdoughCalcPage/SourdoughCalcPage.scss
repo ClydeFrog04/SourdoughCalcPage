@@ -1,7 +1,32 @@
 @use "../../shared/Styles" as *;
+@use "../../shared/Variables" as *;
 
 .sourdoughCalcPage{
     @include flexCenterColumn();
-
+    width: 100vw;
     border: 1px solid rebeccapurple;
+
+
+    .calculator{
+
+        .infoRow{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+        }
+
+        .inputs{
+            & > *{
+                //border: 1px solid orange;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: .5rem;
+            }
+        }
+    }
+
+    @media (width < $breakpointMobile) {
+        padding: 1rem;
+
+    }
 }
