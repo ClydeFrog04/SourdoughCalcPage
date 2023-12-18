@@ -54,6 +54,8 @@ const SourdoughCalcPage = (props: SourdoughCalcPageProps) => {
         if(targetChanged !== "flour"){
             switch (targetChanged){
                 case "starter":
+                    //formula is (100 * g) / p where g is the grams weight you have and p is the percent of the recipe it should make up.
+                    // 100 comes from the flour being 100% of the whole! note that these are bakers percentages :]
                     newFlour = (100 * localMeasurements.starter) / localPercentages.starterPercent;
                     console.log(TAG, "NEW FLOUR WAS:", newFlour);
                     localMeasurements.flour = newFlour;
@@ -72,7 +74,6 @@ const SourdoughCalcPage = (props: SourdoughCalcPageProps) => {
     }
 
     const handlePercentInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        // console.log(e.target.id);
         const {id, value} = e.target;
         console.log(`handlePercentInputChange: name ${id} value ${value}`);
 
@@ -88,11 +89,6 @@ const SourdoughCalcPage = (props: SourdoughCalcPageProps) => {
 
     return (
         <div className="sourdoughCalcPage" onClick={() => {
-            // setName( (prevState) => {
-            //     if(prevState === "Randi"){
-            //         return "Eevee"
-            //     } return "Randi"
-            // });
 
         }}>
             <p className="info">
