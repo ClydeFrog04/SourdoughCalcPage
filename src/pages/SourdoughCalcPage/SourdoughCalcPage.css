@@ -52,7 +52,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid rebeccapurple;
+}
+.sourdoughCalcPage .calculator .infoRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.sourdoughCalcPage .calculator .inputs > * {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
 }
 
 /*# sourceMappingURL=SourdoughCalcPage.css.map */
