@@ -11,17 +11,69 @@
 
     .calculator {
         margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        justify-content: center;
 
 
         .infoRow {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             width: 100%;
+            margin-bottom: .5rem;
+            text-transform: capitalize;
         }
-        .inputs{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+
+        .inputs {
+            display: flex;
+            //grid-template-columns: repeat(3, 1fr);
             gap: .5rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+            }
+
+            section {
+                gap: .5rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                position: relative;
+
+                .RowBtn {
+                    position: absolute;
+                    right: -1.75rem;
+                    //top: 0;
+                    //height: 100%;
+                    //border-radius: 100%;
+                    //border: none;
+                    svg:hover {
+                        cursor: pointer;
+
+                        circle {
+                            fill: #2ab02a;
+                        }
+                    }
+                }
+
+                .del {
+                    transform: rotateZ(45deg);
+                }
+            }
+
+            /* Remove arrows from number input for Chrome, Safari, Edge */
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Remove arrows from number input for Firefox */
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
         }
     }
 

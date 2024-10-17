@@ -58,16 +58,53 @@
 }
 .sourdoughCalcPage .calculator {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
 }
 .sourdoughCalcPage .calculator .infoRow {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
 }
 .sourdoughCalcPage .calculator .inputs {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Remove arrows from number input for Chrome, Safari, Edge */
+  /* Remove arrows from number input for Firefox */
+}
+.sourdoughCalcPage .calculator .inputs section {
+  gap: 0.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  position: relative;
+}
+.sourdoughCalcPage .calculator .inputs section .RowBtn {
+  position: absolute;
+  right: -1.75rem;
+}
+.sourdoughCalcPage .calculator .inputs section .RowBtn svg:hover {
+  cursor: pointer;
+}
+.sourdoughCalcPage .calculator .inputs section .RowBtn svg:hover circle {
+  fill: #2ab02a;
+}
+.sourdoughCalcPage .calculator .inputs section .del {
+  transform: rotateZ(45deg);
+}
+.sourdoughCalcPage .calculator .inputs input[type=number]::-webkit-outer-spin-button,
+.sourdoughCalcPage .calculator .inputs input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sourdoughCalcPage .calculator .inputs input[type=number] {
+  -moz-appearance: textfield;
 }
 @media (width < 480px) {
   .sourdoughCalcPage {
