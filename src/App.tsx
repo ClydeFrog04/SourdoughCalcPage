@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./index.css";
 import {Route, Routes} from "react-router-dom";
 import SourdoughCalcPage from "./pages/SourdoughCalcPage/SourdoughCalcPage.tsx";
 
