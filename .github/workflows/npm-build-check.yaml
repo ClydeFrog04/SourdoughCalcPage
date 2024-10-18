@@ -1,0 +1,29 @@
+name: Build Check
+
+on:
+  pull_request:
+    branches:
+      - main  # Change this to your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Check build status
+        run: |
+          # Add any additional checks here, like tests or linters
+          if [ $? -ne 0 ]; then
+            echo "Build failed. Fix the issues and try again."
+            exit 1
+          fi
+        
